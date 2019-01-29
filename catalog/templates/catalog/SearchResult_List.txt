@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Searched Result</h1>
+
+  {% if Search_List %}
+  <ul>
+    {% for result in Search_List %}
+      <li><a href="{{ result.get_absolute_url }}">{{ result.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  {% else %}
+    <p> There is no results found.</p>
+  {% endif %}
+{% endblock %}

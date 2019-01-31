@@ -3,7 +3,7 @@ from django.urls import reverse
 from django.contrib.auth.models import User
 from datetime import date
 import uuid
-import Image
+from PIL import Image
 from io import BytesIO
 from django.core.files.uploadedfile import InMemoryUploadedFile
 import sys
